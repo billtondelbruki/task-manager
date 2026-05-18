@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>TaskFlow • Personal Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="task-manager">
+  <div class="app-header">
+    <h1>TaskFlow</h1>
+    <div class="subhead">Stay organized, master your day</div>
+  </div>
+
+  <div class="task-input-section">
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Write a new task... e.g., 'Review DOM notes'" autocomplete="off">
+      <button class="add-btn" id="addTaskBtn">+ Add Task</button>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="active">Active</button>
+    <button class="filter-btn" data-filter="completed">✅ Completed</button>
+  </div>
+
+  <div class="task-list-wrapper">
+    <ul id="taskList"></ul>
+    <div id="emptyStateContainer"></div>
+  </div>
+
+  <div class="stats-footer">
+    <span id="taskCounter">0 tasks</span>
+    <button id="clearCompletedBtn" class="clear-completed">Clear completed</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
